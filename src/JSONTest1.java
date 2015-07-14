@@ -29,9 +29,11 @@ public class JSONTest1 {
 
 		// JOSN to Plain Old Java Object ("POJO")
 		try {
+			Person p0 = mapper.readValue("{\"name\":\"Bob\", \"age\":13}", Person.class);
+			System.out.println(p0);
+			
 			Person p1 = mapper.readValue(new File("data.json"), Person.class);
 			System.out.println(p1);
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
