@@ -2,7 +2,6 @@
  * How to convert Java object to / from JSON (Jackson)
  */
 import java.io.File;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 class Person {
